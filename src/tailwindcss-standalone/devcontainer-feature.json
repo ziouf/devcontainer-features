@@ -1,0 +1,24 @@
+{
+    "name": "tailwindcss-standalone",
+    "id": "tailwindcss-standalone",
+    "version": "1.0.0",
+    "description": "Install tailwindcss-standalone from Github releases",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select a tailwindcss-standalone version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils": {
+            "version": "^1.0.0"
+        }
+    }
+}

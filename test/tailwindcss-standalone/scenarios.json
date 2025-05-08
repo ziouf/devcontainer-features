@@ -1,0 +1,26 @@
+{
+    "tailwindcss-latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "tailwindcss-standalone": {
+                "version": "latest"
+            }
+        }
+    },
+    "tailwindcss-v4.1.5": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "tailwindcss-standalone": {
+                "version": "v4.1.5"
+            }
+        }
+    },
+    "tailwindcss-4.1.5": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "tailwindcss-standalone": {
+                "version": "4.1.5"
+            }
+        }
+    }
+}
