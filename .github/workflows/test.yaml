@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - natscli
+          - yq
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,8 +34,8 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - natscli
+          - yq
     steps:
       - uses: actions/checkout@v4
 
