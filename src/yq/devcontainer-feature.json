@@ -1,0 +1,19 @@
+{
+    "name": "yq",
+    "id": "yq",
+    "version": "1.0.0",
+    "description": "Install yq from Github releases",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select an yq version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

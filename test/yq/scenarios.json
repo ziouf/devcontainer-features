@@ -1,0 +1,26 @@
+{
+    "yq-latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "yq": {
+                "version": "latest"
+            }
+        }
+    },
+    "yq-v4.45.2": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "yq": {
+                "version": "v4.45.2"
+            }
+        }
+    },
+    "yq-4.45.2": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "yq": {
+                "version": "4.45.2"
+            }
+        }
+    }
+}

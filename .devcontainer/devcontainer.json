@@ -21,5 +21,11 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "updateContentCommand": "npm install -g @devcontainers/cli",
+    "initializeCommand": {
+        "init": "/bin/bash .devcontainer/init.sh"
+    },
+    "postStartCommand": {
+        "postStart": "/bin/bash .devcontainer/post-start.sh"
+    }
 }
