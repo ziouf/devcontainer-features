@@ -1,0 +1,19 @@
+{
+    "name": "natscli",
+    "id": "natscli",
+    "version": "1.0.0",
+    "description": "Install natscli from Github releases",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select a natscli version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

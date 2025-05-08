@@ -1,0 +1,26 @@
+{
+    "natscli-latest": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "natscli": {
+                "version": "latest"
+            }
+        }
+    },
+    "natscli-v0.2.2": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "natscli": {
+                "version": "v0.2.2"
+            }
+        }
+    },
+    "natscli-0.2.2": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "natscli": {
+                "version": "0.2.2"
+            }
+        }
+    }
+}
