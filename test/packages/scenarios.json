@@ -1,0 +1,26 @@
+{
+    "packages-0": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "packages": {
+                "packages": []
+            }
+        }
+    },
+    "packages-1": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "packages": {
+                "packages": ["fzf"]
+            }
+        }
+    },
+    "packages-2": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "packages": {
+                "packages": ["fzf", "fish"]
+            }
+        }
+    }
+}
