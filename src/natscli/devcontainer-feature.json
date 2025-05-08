@@ -15,5 +15,10 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ]
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/common-utils": {
+            "version": "^1.0.0"
+        }
+    }
 }
