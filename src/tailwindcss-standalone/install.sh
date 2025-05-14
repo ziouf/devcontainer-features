@@ -18,11 +18,11 @@ fi
 VERSION=${VERSION#v}
 
 # Determine the OS and architecture
-case "$(uname -s | tr '[:upper:]' '[:lower:]')" in
-  linux*)
+case "$(uname -s)" in
+  Linux)
     OS="linux"
     ;;
-  darwin*)
+  Darwin)
     OS="macos"
     ;;
   *)
@@ -32,10 +32,10 @@ case "$(uname -s | tr '[:upper:]' '[:lower:]')" in
 esac
 
 case "$(uname -m)" in
-  x86_64)
+  x86_64|amd64)
     ARCH="x64"
     ;;
-  aarch64)
+  aarch64|arm64)
     ARCH="arm64"
     ;;
   *)
