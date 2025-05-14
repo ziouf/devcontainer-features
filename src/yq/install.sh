@@ -19,11 +19,11 @@ fi
 VERSION=${VERSION#v}
 
 # Determine the OS and architecture
-case "$(uname -s | tr '[:upper:]' '[:lower:]')" in
-  linux*)
+case "$(uname -s)" in
+  Linux)
     OS="linux"
     ;;
-  darwin*)
+  Darwin)
     OS="darwin"
     ;;
   *)
@@ -33,10 +33,10 @@ case "$(uname -s | tr '[:upper:]' '[:lower:]')" in
 esac
 
 case "$(uname -m)" in
-  x86_64)
+  x86_64|amd64)
     ARCH="amd64"
     ;;
-  aarch64)
+  aarch64|arm64)
     ARCH="arm64"
     ;;
   *)
@@ -52,4 +52,3 @@ URL="https://github.com/${REPOSITORY}/releases/download/v${VERSION}/yq_${OS}_${A
 echo "Downloading yq from $URL"
 curl -L -o /usr/local/bin/yq "$URL"
 chmod +x /usr/local/bin/yq
-
