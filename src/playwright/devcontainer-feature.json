@@ -1,0 +1,30 @@
+{
+    "name": "playwright",
+    "id": "playwright",
+    "version": "1.0.0",
+    "description": "Install playwright from npx",
+    "options": {},
+    "containerEnv": {
+        "PLAYWRIGHT_BROWSERS_PATH": "/var/run/ms-playwright-cache",
+        "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1"
+    },
+    "mounts": [
+        {
+            "type": "volume",
+            "source": "ms-playwright-browsers",
+            "target": "/var/run/ms-playwright-cache"
+        }
+    ],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node"
+    ],
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        }
+    },
+    "onCreateCommand": "chown -R ${_REMOTE_USER}:${_REMOTE_USER} /var/run/ms-playwright-cache",
+    "updateContentCommand": {
+        "playwrightBrowsers": "npx playwright install"
+    }
+}
