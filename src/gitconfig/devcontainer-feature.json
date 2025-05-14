@@ -1,0 +1,27 @@
+{
+    "name": "gitconfig",
+    "id": "gitconfig",
+    "version": "1.0.0",
+    "description": "Load gitconfig from host",
+    "options": {},
+    // "installsAfter": [
+    //     "ghcr.io/devcontainers/features/common-utils"
+    // ],
+    // "dependsOn": {
+    //     "ghcr.io/devcontainers/features/common-utils": {
+    //         "version": "^1.0.0"
+    //     }
+    // },
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.gitconfig",
+            "target": "/home/vscode/.gitconfig",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.gitconfig.d",
+            "target": "/home/vscode/.gitconfig.d",
+            "type": "bind"
+        }
+    ]
+}
