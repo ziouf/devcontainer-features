@@ -23,9 +23,9 @@
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli",
     "initializeCommand": {
-        "init": "/bin/bash .devcontainer/init.sh"
+        "gitconfig": "/bin/bash .devcontainer/gitconfig.sh init"
     },
     "postStartCommand": {
-        "postStart": "/bin/bash .devcontainer/post-start.sh"
+        "gitconfig": "/bin/bash .devcontainer/gitconfig.sh postStart"
     }
 }
